@@ -24,50 +24,19 @@ The five parameters which have been varied to plot the performance curves:
 4. BATCH SIZE: decreasing the batch size results in drastically increasing of computation time. This is explained by the fact that the training data is divided into smaller batch sizes and needs more batches to be processed hence increasing computation time . Batch size must be kept optimal, not too small and not too large, for best results. 
 
 Many experiments were performed with the above parameters to obtain the best training model mentioned below.
-5. TRAINING MODEL :
 
-Layer (type)                 Output Shape              Param    
-=================================================================
-conv2d_1 (Conv2D)            (None, 26, 26, 64)        640       
-_________________________________________________________________
-max_pooling2d_1 (MaxPooling2 (None, 13, 13, 64)        0         
-_________________________________________________________________
-conv2d_2 (Conv2D)            (None, 11, 11, 128)       73856     
-_________________________________________________________________
-max_pooling2d_2 (MaxPooling2 (None, 5, 5, 128)         0         
-_________________________________________________________________
-conv2d_3 (Conv2D)            (None, 3, 3, 128)         147584    
-_________________________________________________________________
-conv2d_4 (Conv2D)            (None, 1, 1, 64)          73792     
-_________________________________________________________________
-dropout_1 (Dropout)          (None, 1, 1, 64)          0         
-_________________________________________________________________
-flatten_1 (Flatten)          (None, 64)                0         
-_________________________________________________________________
-dense_1 (Dense)              (None, 128)               8320      
-_________________________________________________________________
-dropout_2 (Dropout)          (None, 128)               0         
-_________________________________________________________________
-dense_2 (Dense)              (None, 84)                10836     
-_________________________________________________________________
-dropout_3 (Dropout)          (None, 84)                0         
-_________________________________________________________________
-dense_3 (Dense)              (None, 10)                850       
-=================================================================
-Total params: 315,878
-Trainable params: 315,878
-Non-trainable params: 0
-_________________________________________________________________
+### Training Model
 
+![alt text](https://raw.githubusercontent.com/shreyagu/Handwritten-digit-recognition-MNIST/master/results/model_CNN.png)
 
 ### Results
 
 **Test Accuracy : 99.39%**
  
-![alt text]((https://raw.githubusercontent.com/shreyagu/Handwritten-digit-recognition-MNIST/master/results/training_accuracy.png)
+![alt text](https://raw.githubusercontent.com/shreyagu/Handwritten-digit-recognition-MNIST/master/results/training_accuracy.png)
 
-![alt text]((https://raw.githubusercontent.com/shreyagu/Handwritten-digit-recognition-MNIST/master/results/validation_accuracy.png)
+![alt text](https://raw.githubusercontent.com/shreyagu/Handwritten-digit-recognition-MNIST/master/results/validation_accuracy.png)
 
-![alt text]((https://raw.githubusercontent.com/shreyagu/Handwritten-digit-recognition-MNIST/master/results/epoch_loss.png)
+![alt text](https://raw.githubusercontent.com/shreyagu/Handwritten-digit-recognition-MNIST/master/results/epoch_loss.png)
 
 
